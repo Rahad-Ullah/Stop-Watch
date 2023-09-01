@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/2055/2055568.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-10/12 h-screen mx-auto flex flex-col justify-around items-center">
+    <main class=" flex flex-col items-center gap-12 mt-28 w-2/3 md:max-w-md">
+        <div class="">
+            <h1 id="clock" class="text-8xl font-semibold text-primary">0</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 items-center justify-around gap-4 w-full">
+            <button id="btn-start" onclick="start()" class="btn btn-success px-8 w-full">Start</button>
+            <button id="btn-stop" class="btn btn-error px-8 w-full">Stop</button>
+            <button id="btn-reset" class="btn btn-warning px-8 w-full">Reset</button>
+          </div>
+    </main>
+    <footer class="text-center space-y-1 mt-12">
+        <h2 class="text-3xl font-semibold">Stop Watch</h2>
+        <p class="font-medium">Developed By <a href="https://sites.google.com/view/rahat-portfolio/home" target="_blank" class="link link-primary link-hover">Rahad Ullah</a></p>
+        <p class="font-medium text-sm link link-error"><a href="https://rahad-ullah.github.io/Stop-Watch/"> Github Source Code</a></p>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
